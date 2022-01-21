@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtActivity">
+
+    <ImageView
+        android:id="@+id/ivSelectImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/select_image" />
+
+    <EditText
+        android:id="@+id/textArtName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Art Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivSelectImage"
+        app:layout_constraintStart_toStartOf="@+id/ivSelectImage"
+        app:layout_constraintTop_toBottomOf="@+id/ivSelectImage"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <EditText
+        android:id="@+id/textArtistName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Artist Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivSelectImage"
+        app:layout_constraintStart_toStartOf="@+id/ivSelectImage"
+        app:layout_constraintTop_toBottomOf="@+id/ivSelectImage"
+        app:layout_constraintVertical_bias="0.35"/>
+
+    <EditText
+        android:id="@+id/textYear"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Year"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivSelectImage"
+        app:layout_constraintStart_toStartOf="@+id/ivSelectImage"
+        app:layout_constraintTop_toBottomOf="@+id/ivSelectImage"
+        app:layout_constraintVertical_bias="0.55"/>
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textYear"
+        app:layout_constraintStart_toStartOf="@+id/textYear"
+        app:layout_constraintTop_toBottomOf="@+id/textYear"
+        app:layout_constraintVertical_bias="0.15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
